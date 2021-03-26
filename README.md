@@ -1,4 +1,4 @@
-# Connecticut Census Tract to Town Crosswalk
+# Connecticut 2010 Census Tract to Town Crosswalk
 
 The `data/tract2town.csv` file contains a crosswalk between CT census tracts (as defined by 2010 US Census) and
 towns in CT. **Note that some tracts cross town boundaries,
