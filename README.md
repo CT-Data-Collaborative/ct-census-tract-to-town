@@ -1,9 +1,11 @@
-# Connecticut 2010 Census Tract to Town Crosswalk
+# Connecticut 2010 and 2020 Census Tract to Town Crosswalk
 
-The `data/tract2town.csv` file contains a crosswalk between CT census tracts (as defined by 2010 US Census) and
-towns in CT. **Note that some tracts cross town boundaries,
-therefore this crosswalk is approximate**. This is usually the case for very small towns.
-This crosswalk contains 829 tracts that are matched to 168 towns (*Canaan* is missing its own census tract).
+This repository contains crosswalks between CT census tracts and towns in Connecticut for 2010 and 2020 Census. **Note that some tracts cross town boundaries, therefore this crosswalk is approximate**. This is usually the case for very small towns.
+
+* The 2010 crosswalk (`2010/tract2town-2010.csv`) contains 829 tracts matched to 168 towns (*Canaan* is missing its own census tract).
+* The 2020 crosswalk (`2020/tract2town-2020.csv`) contains 883 tracts matched to 169 towns; 5 of those census tracts (all coastal) are matched to *County subdivisions not defined*.
+
+> You can learn about the differences between 2010 and 2020 census tract boundaries for Connecticut [in this blog post](https://www.ctdata.org/blog/2020-census-geography-connecticut) using an interactive map and a summary table.
 
 |tract_fips|tract_name|town|county|town_fips
 |--|--|--|--|--|
@@ -28,10 +30,7 @@ In QGIS, open census tract boundaries, calculate their centroids, and perform ne
 of some coastal tracts are slightly off the nearest town.
 
 ### Source datasets
-
-* Connecticut town boundaries: https://data.ct.gov/Government/Town-Boundary-Index-Map/evyv-fqzg
-* Connecticut census tract boundaries: https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2019&layergroup=Census+Tracts
+* 2020 TIGER/Line Shapefiles: https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2020.html
 
 ### License
-
-Released under MIT license. Feel free to use for all sorts of projects. We will appreciate if you credited CTData Collaborative, although this is not required.
+Released under MIT license. Feel free to use for any project. We will appreciate if you credited CTData Collaborative, although this is not required.
